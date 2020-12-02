@@ -29,7 +29,15 @@ const setupInput = function (conn) {
         connection.write("Move: down");
       }
       if (key === '\u0064') {
-      connection.write("Move: right");
+        connection.write("Move: right");
+      }
+      //Letter p
+      if (key === '\u0070') {
+        connection.write("Say: YEEHAW");
+      }
+      //Letter o
+      if (key === '\u006F') {
+        connection.write("Say: ME FAST");
       }
     });
   }
